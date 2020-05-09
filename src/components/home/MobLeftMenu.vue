@@ -1,8 +1,8 @@
 <template>
     <div class="vertical-menu">
-      <a href="#" v-bind:class="activeMobileHome">Home</a>
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
+      <a href="#/mobilehome" v-bind:class="activeMobileHome">Home</a>
+      <a href="#/postStampHome" v-bind:class="activePostStampHome">Post Stamps</a>
+      <a href="#/mobKartHome" v-bind:class="activeMobKartHome">Mobile Products</a>
       <a href="#">Link 3</a>
       <a href="#">Link 4</a>
       <a href="#">Link 1</a>
@@ -16,7 +16,7 @@
 <script>
 export default {
   name: 'MobileLeftMenu',
-  props: ['activeMobileHome'],
+  props: ['activeMobileHome', 'activePostStampHome', 'activeMobKartHome'],
   data () {
     return {
       introTextLogin: 'Welcome to mobile home component'

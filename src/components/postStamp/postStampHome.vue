@@ -1,20 +1,8 @@
 <template>
   <div style="display: flex;">
-    <MobileLeftMenu activeMobileHome="active"></MobileLeftMenu>
+    <MobileLeftMenu activePostStampHome="active"></MobileLeftMenu>
     <div class="homeMargin">
-      <h2>{{introTextLogin}} Our organization is pledged to helping eradicate poverty in the third world</h2>
-      <h4>Available products</h4>
-      <ul>
-        <li v-for="item in availProduct" :key="item">
-          {{ item }}
-        </li>
-      </ul>
-      <h4>Upcoming Products [New Mobile Sets]</h4>
-      <ul>
-        <li v-for="item in newProduct" :key="item">
-          {{ item }}
-        </li>
-      </ul>
+      <h2>{{introTextLogin}}</h2>
     </div>
     <br>
     <!-- <div> -->
@@ -27,13 +15,13 @@
 <script>
 import MobileLeftMenu from '@/components/home/MobLeftMenu'
 export default {
-  name: 'MobHome',
+  name: 'PostStampHome',
   components: {
     MobileLeftMenu: MobileLeftMenu
   },
   data () {
     return {
-      introTextLogin: 'Welcome to mobile home component',
+      introTextLogin: 'Post Stamp Home',
       availProduct: ['Upload your registration details', 'Tea', 'Make a payment', 'More Coming Soon........'],
       newProduct: ['Iphone1', 'Iphone2', 'More Coming Soon........']
     }
